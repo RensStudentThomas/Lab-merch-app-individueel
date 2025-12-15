@@ -29,12 +29,73 @@ h1, h2, h3 {
     font-family: "Galada";
 }
 
-.border {
-    padding: 2rem;
+
+.border-slide {
     border: 1px solid var(--color2);
     border-radius: 55px;
 }
 
+.slider-products {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: var(--color1);
+    cursor: grab;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider-products:active {
+    cursor: grabbing;
+}
+
+.slider-products div {
+    background-color: var(--color3);
+    color: var(--color1);
+    border: 1px solid var(--color2);
+    border-radius: 55px;
+}
+
+.slider-products div .img-container {
+    width: 100%;
+    border: 1px solid var(--color2);
+    border-radius: 55px;
+}
+
+.slider-products div div {
+    padding: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+
+.btn {
+    background: var(--color4);
+    color: var(--color1);
+    text-decoration: none;
+    font-family: "Galada";
+    font-size: 1.2rem;
+    padding: 0.4rem 3rem;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+
+
+/*kleding*/
+
+.border {
+    padding: 1rem;
+    border: 1px solid var(--color2);
+    border-radius: 55px;
+}
 
 .product-containers {
     display: flex;
@@ -62,32 +123,4 @@ h1, h2, h3 {
 
 .product-containers div div p {
     font-size: 1.2rem;
-}
-
-.btn {
-    background: var(--color4);
-    color: var(--color1);
-    text-decoration: none;
-    font-family: "Galada";
-    font-size: 1.2rem;
-    padding: 0.4rem 3rem;
-    border-radius: 30px;
-    display: inline-block;
-}
-
-
-.merch-slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 1rem;
-    padding: 1rem;
-    border-radius: 30px;
-    background-color: var(--color0);
-    cursor: grab;
-    -webkit-overflow-scrolling: touch;
-}
-
-.merch-slider:active {
-    cursor: grabbing;
 }
