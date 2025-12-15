@@ -16,6 +16,87 @@ html {
 header {
     background-color: var(--color2);
     color: var(--color1);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+}
+
+header input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger-menu,
+.search-menu,
+.winkelzak-menu {
+    display: none;
+}
+
+.hamburger-menu,
+.search-menu,
+.winkelzak-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 2rem;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+#menu-toggle-ham:checked ~ .hamburger-menu {
+    display: block;
+}
+
+#menu-toggle-search:checked ~ .search-menu {
+    display: block;
+}
+
+#menu-toggle-zak:checked ~ .winkelzak-menu {
+    display: block;
+}
+
+.icon-close {
+    display: none;
+}
+
+#menu-toggle-ham:checked + label .icon-hamburger {
+    display: none;
+}
+
+#menu-toggle-ham:checked + label .icon-close {
+    display: inline;
+}
+
+.search-menu h3 {
+    margin-bottom: 1rem;
+}
+
+.search-menu input {
+    background-color: var(--color1);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.winkelzak-menu p {
+    margin: 2rem 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.winkelzak-menu a {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+    color: var(--color1);
+    text-decoration: none;
 }
 
 
@@ -26,7 +107,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: "Galada";
+    font-family: 'Galada';
 }
 
 
@@ -39,9 +120,8 @@ h1, h2, h3 {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 1rem;
+    gap: 0.8rem;
     padding: 1rem;
-    border-radius: 30px;
     background-color: var(--color1);
     cursor: grab;
     -webkit-overflow-scrolling: touch;
@@ -55,18 +135,19 @@ h1, h2, h3 {
     background-color: var(--color3);
     color: var(--color1);
     border: 1px solid var(--color2);
-    border-radius: 55px;
+    border-radius: 40px;
 }
 
 .slider-products div .img-container {
     width: 100%;
     border: 1px solid var(--color2);
-    border-radius: 55px;
+    border-radius: 40px;
 }
 
 .slider-products div div {
-    padding: 1.2rem;
-    padding-bottom: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 h2 {
@@ -83,8 +164,21 @@ h2 {
     font-family: "Galada";
     font-size: 1.2rem;
     padding: 0.4rem 3rem;
+    border: 1px solid var(--color1);
     border-radius: 30px;
     display: inline-block;
+}
+
+.add-btn {
+    background: var(--color4);
+    border: 1px solid var(--color1);
+    border-radius: 50px;
+    padding: 0.5rem 0.5rem;
+}
+
+.add-btn img{
+    width: 20px;
+    height: 20px;
 }
 
 
