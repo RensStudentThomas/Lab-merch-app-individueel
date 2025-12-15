@@ -74,3 +74,20 @@ h1, h2, h3 {
     border-radius: 30px;
     display: inline-block;
 }
+
+
+.merch-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: var(--color0);
+    cursor: grab;
+    -webkit-overflow-scrolling: touch;
+}
+
+.merch-slider:active {
+    cursor: grabbing;
+}
