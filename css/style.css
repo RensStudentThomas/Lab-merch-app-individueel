@@ -13,15 +13,21 @@ html {
     font-style: normal;
 }
 
+header {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+
 body {
+    background-color: var(--color1);
+    color: var(--color3);
     font-family: 'Brother1816', sans-serif;
 }
 
 h1, h2, h3 {
     font-family: "Galada";
 }
-
-
 
 .border {
     padding: 2rem;
