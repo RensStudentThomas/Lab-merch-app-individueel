@@ -1,0 +1,18 @@
+html {
+    --color0: #fff;      /* Wit */
+    --color1: #F5F1DC;   /* Licht-beige */
+    --color2: #780116;   /* Rood */
+    --color3: #102022;   /* Zwart */
+    --color4: #E36414;   /* Oranje */
+}
+
+@font-face {
+    font-family: 'Brother1816';
+    src: url('/fonts/Brother1816-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Brother1816', sans-serif;
+}
