@@ -136,15 +136,18 @@ header img {
 
 /*hamburger / nav */
 
+
+
 .nav-layout {
     display: flex;
     flex-direction: column;    
     margin: 0.5rem 0;
-    padding: ;
-    
+    gap: 2rem;
 }
 
 .nav-layout a {
+    font-size: 1.4rem;
+    font-weight: bold;
     text-decoration: none;
     color: var(--color1);
 }
@@ -152,10 +155,20 @@ header img {
 .nav-layout-small {
     display: flex;
     flex-direction: column;
+    gap: 0.8rem;
     margin: 0.5rem 0;
     margin-left: 25px;
 }
 
+.nav-layout-small a {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.nav-layout > a:not(:last-child) {
+    margin-top: 0.5rem;
+}
 
 /*body*/
 

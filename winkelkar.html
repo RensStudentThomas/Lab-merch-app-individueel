@@ -12,16 +12,77 @@
 <body>
     <header>
         <img src="icons/Logo.png" alt="Club Fritique">
+        <div class="header-layout">
 
+            <div>
+            <input type="checkbox" id="menu-toggle-search" class="menu-toggle-search">
+            <label for="menu-toggle-search" class="icon-btn">
+                <img src="icons/Search-wit.svg" alt="search" class="icon-search">
+            </label>
+            <nav class="search-menu">
+                <h3 class="tittle-menu">Zoeken</h3>
+                <input type="search">
+            </nav>
+            </div>
+
+            <div>
+            <input type="checkbox" id="menu-toggle-zak" class="menu-toggle-zak">
+            <label for="menu-toggle-zak" class="icon-btn">
+                <img src="icons/Winkelzak-wit.svg" alt="search" class="icon-search">
+            </label>
+            <nav class="winkelzak-menu">
+                <h3 class="tittle-menu">Jouw Winkelkar</h3>
+                <div class="winkelzak-inside" id="shoppingcart">
+                    <p>U hebt momenteel niks <br> in uw winkewagen</p>
+                </div>
+                <div class="nav-layout">
+                    <a href="winkelkar.html">Bekijk winkelkar</a>
+                    <a href="#">Checkout</a>
+                </div>
+
+            </nav>
+            </div>
+
+            <div>
+            <input type="checkbox" id="menu-toggle-ham" class="menu-toggle-ham">
+            <label for="menu-toggle-ham" class="icon-btn">
+                <img src="icons/Hamburger.svg" alt="menu" class="icon-hamburger">
+                <img src="icons/X-close.svg" alt="sluiten" class="icon-close">
+            </label>
+            <nav class="hamburger-menu">
+                <h3 class="tittle-menu">Menu</h3>
+
+                <div class="nav-layout">
+                    <a href="#">Home</a>
+                    <a href="#">Kataloog</a>
+                    <div class="nav-layout-small">
+                        <a href="#">All</a>
+                        <a href="#">Nieuw</a>
+                        <a href="#">Best verkopende</a>
+                    </div>
+                    <a href="kleding.html">Verkoop</a>
+                    <div class="nav-layout-small">
+                        <a href="kleding.html">Kleding</a>
+                        <a href="kleding.html">Objecten</a>
+                    </div>
+                    <a href="#">Log in</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+            </div>
+
+        </div>
     </header>
     <main>
-        <div>
+        <div class="layout-head-shop">
             <img src="icons/Winkelzak-rood.svg" alt="">
             <h1>Winkelkar</h1>
         </div>
 
+        <div class="no-product">
         <h2>U hebt momenteel niks in uw winkewagen</h2>
         <a href="index.html" class="btn">Terug</a>
+        </div>
     </main>
     <footer></footer>
 </body>
