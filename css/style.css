@@ -22,6 +22,7 @@ html, body {
 /* header*/
 
 header {
+    position: fixed;
     background-color: var(--color2);
     color: var(--color1);
     height: 80px;
@@ -29,7 +30,6 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    position: relative;
     display: flex;
     align-items: center;
     gap: 5.5rem;
@@ -72,7 +72,7 @@ header img {
     height: calc(100% - 80px);
     background-color: var(--color2);
     color: var(--color1);
-    padding: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
     z-index: 100;
     display: none;
@@ -84,10 +84,6 @@ header img {
     display: block;
 }
 
-.icon-close {
-    display: none;
-}
-
 #menu-toggle-ham:checked + label .icon-hamburger {
     display: none;
 }
@@ -96,9 +92,19 @@ header img {
     display: inline;
 }
 
+.icon-close {
+    display: none;
+}
+
 .tittle-menu {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0.01rem;
     margin-bottom: 1rem;
 }
+
+
+/*search*/
 
 .search-menu input {
     background-color: var(--color1);
@@ -108,18 +114,46 @@ header img {
     border: none;
 }
 
-.winkelzak-menu p {
+/*winkel*/
+
+.winkelzak-menu .winkelzak-inside {
     margin: 2rem 0;
     text-align: center;
     font-style: italic;
+    font-size: 1.1rem;
+    border: 1px solid var(--color1);
+    border-radius: 30px;
+    text-align: center;
+    padding: 1rem;
 }
 
 .winkelzak-menu a {
     display: block;
-    text-align: center;
     margin: 0.5rem 0;
     color: var(--color1);
     text-decoration: none;
+}
+
+/*hamburger / nav */
+
+.nav-layout {
+    display: flex;
+    flex-direction: column;    
+    margin: 0.5rem 0;
+    padding: ;
+    
+}
+
+.nav-layout a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.nav-layout-small {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    margin-left: 25px;
 }
 
 
@@ -127,7 +161,7 @@ header img {
 
 main {
     margin: 1rem;
-    /*padding-top: 80px;*/
+    padding-top: 80px;
 }
 
 body {
@@ -150,14 +184,9 @@ h1, h2, h3 {
     padding: 2rem;
 }
 
-
-.border-slide {
-    border: 1px solid var(--color2);
-    border-radius: 55px;
-}
-
 h2 {
     font-size: 2.2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 2rem;
 }
@@ -225,6 +254,11 @@ h5 {
     height: 20px;
 }
 
+.border-slide {
+    border: 1px solid var(--color2);
+    border-radius: 55px;
+}
+
 /* slider */
 
 .slider-products {
@@ -260,9 +294,6 @@ h5 {
     border: 1px solid var(--color1);
     border-radius: 30px;
 }
-
-
-
 
 
 /* grid / containers */
