@@ -13,25 +13,48 @@ html {
     font-style: normal;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 header {
     background-color: var(--color2);
     color: var(--color1);
     height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 7.5rem;
     padding: 0 1rem;
-    position: relative;
+    z-index: 200;
 }
 
 header input[type="checkbox"] {
     display: none;
 }
 
-.hamburger-menu,
-.search-menu,
-.winkelzak-menu {
-    display: none;
+.header-layout {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-btn img {
+    width: 32px;
+    height: 32px;
 }
 
 .hamburger-menu,
@@ -47,16 +70,11 @@ header input[type="checkbox"] {
     padding: 2rem;
     box-sizing: border-box;
     z-index: 100;
+    display: none;
 }
 
-#menu-toggle-ham:checked ~ .hamburger-menu {
-    display: block;
-}
-
-#menu-toggle-search:checked ~ .search-menu {
-    display: block;
-}
-
+#menu-toggle-ham:checked ~ .hamburger-menu,
+#menu-toggle-search:checked ~ .search-menu,
 #menu-toggle-zak:checked ~ .winkelzak-menu {
     display: block;
 }
@@ -73,7 +91,7 @@ header input[type="checkbox"] {
     display: inline;
 }
 
-.search-menu h3 {
+.tittle-menu {
     margin-bottom: 1rem;
 }
 
@@ -99,6 +117,14 @@ header input[type="checkbox"] {
     text-decoration: none;
 }
 
+.nav-layout {
+    
+}
+
+main {
+    margin: 1rem;
+    /*padding-top: 80px;*/
+}
 
 body {
     background-color: var(--color1);
