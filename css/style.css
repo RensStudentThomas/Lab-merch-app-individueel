@@ -332,5 +332,72 @@ h5 {
 }
 
 
-/* Product  */
 
+/* Product page */
+
+.product-detail {
+    /*padding: 1rem;*/
+    padding-top: 80px;
+}
+
+.info-container {
+    background: var(--color2);
+    color: var(--color1);
+    border-radius: 40px;
+    padding: 1.5rem;
+}
+
+.img-box {
+    background: var(--color1);
+    border-radius: 30px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img-box img {
+    width: 100%;
+    display: block;
+}
+
+.price {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* kleuren */
+
+.option-group {
+    margin: 1.5rem 0;
+}
+
+.color-options {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.color-options input {
+    display: none;
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 2px solid var(--color1);
+    margin-right: 0.5rem;
+}
+
+.color.white {
+    background: var(--color1);
+}
+
+.color.red {
+    background: var(--color2);
+}
+
+.color-options input:checked + .color{
+    outline: 3px solid var(--color4);
+    /*margin: 1rem;*/
+}
