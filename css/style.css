@@ -174,7 +174,7 @@ header img {
 
 main {
     margin: 1rem;
-    padding-top: 80px;
+    
 }
 
 body {
@@ -475,4 +475,110 @@ h5 {
 
 .info-text h4{
     font-size: 1.2rem;
+}
+
+
+
+/* gevulde winkelkar*/
+
+.cart {
+    padding: 1.5rem;
+    background-color: var(--color1);
+    min-height: calc(100vh - 80px);
+    padding-top: 80px;
+}
+
+.cart-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Galada';
+    font-size: 2rem;
+    color: var(--color3);
+    margin-bottom: 1.5rem;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--color2);
+    border-radius: 20px;
+    background-color: var(--color1);
+}
+
+.cart-item img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.cart-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.price {
+    font-weight: bold;
+    margin: 0.2rem 0 0.6rem;
+}
+
+.cart-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.quantity button {
+    background: none;
+    border: 1px solid var(--color3);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.shipping {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color2);
+}
+
+.checkout {
+    padding: 0rem;
+}
+
+.cart-footer {
+    background-color: var(--color3);
+    color: var(--color1);
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.total {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.checkout {
+    display: block;
+    width: 100%;
 }
