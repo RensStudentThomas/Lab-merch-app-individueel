@@ -14,38 +14,88 @@
         <img src="icons/Logo.png" alt="Club Fritique">
 
     </header>
-    <main>
-        <a href="index.html">Terug</a>
+    <main class="product-detail">
+        <a href="index.html" class="back-btn"><img src="icons/Back-arrow-round.svg" alt="Terug"></a>
+        
         <div class="info-container">
-            <h3>Sterren shirt</h3>
-            <h1>14.99 euro</h1>
-
-            <div>
+            <div class="img-box">
                 <img src="img/Merch-Kleding-1-sterren_shirt-wit.png" alt="">
             </div>
 
+            <h3>Sterren shirt</h3>
+            <h1 class="price">14.99 euro</h1>
 
-            <p>Kies kleur</p>
+            <div class="option-group">
+                <p>Kies kleur</p>
+
+                <label class="color-options">
+                    <input type="radio" name="color" checked>
+                    <span class="color-white"></span>
+                    Wit
+                </label>
+
+                <label class="color-options">
+                    <input type="radio" name="color">
+                    <span class="color-red"></span>
+                    Rood
+                </label>
+            </div>
 
 
-            <p>Kies maat</p>
+            <div class="option-group">
+                <p>Kies maat</p>
+
+                <div class="size-options">
+                    <label>
+                        <input type="radio" name="size">
+                        <span>XS</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size">
+                        <span>S</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size" checked>
+                        <span>M</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size">
+                        <span>L</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size">
+                        <span>XL</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="size">
+                        <span>2XL</span>
+                    </label>
+                </div>
+            </div>
 
 
-            <p>Hoeveel?</p>
+            <div class="option-group">
+                <p>Hoeveel?</p>
 
+                <div class="quantity-options">
+                    <button><img src="icons/Min-wit.svg" alt="-"></button>
+                    <span>1</span>
+                    <button><img src="icons/Plus-wit.svg" alt="+"></button>
+                </div>
+            </div>
 
+            <a href="winkelkar.html" class="add-cart-btn">In winkelwagen</a>
 
-            <div>
-                <h6>Info</h6>
+            <div class="info-text">
+                <h4>Info</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
-            </div>
+        </div>
 
         <div>
         <h2>Andere producten</h3>
         </div>
     </main>
-    <footer></footer>
 </body>
 </html>
