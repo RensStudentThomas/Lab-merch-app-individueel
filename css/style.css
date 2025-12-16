@@ -41,7 +41,7 @@ header input[type="checkbox"] {
 }
 
 header img {
-    padding-left: 1rem;
+    margin-left: 1rem;
 }
 
 .header-layout {
@@ -156,12 +156,19 @@ h1, h2, h3 {
     border-radius: 55px;
 }
 
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
 .product-card {
     background-color: var(--color3);
     color: var(--color1);
     border: 1px solid var(--color2);
     border-radius: 40px;
     overflow: hidden;
+    padding-bottom: 1rem;
     /*scroll-snap-align: start;
     flex-shrink: 0;
     width: 100%;*/
@@ -185,14 +192,13 @@ h1, h2, h3 {
     font-size: 0.9rem;
 }
 
-.product-info h5 {
-    font-size: 1.4rem;
+h5 {
+    margin: 0px;
 }
 
-h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
+.product-info h5 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 
 .btn {
