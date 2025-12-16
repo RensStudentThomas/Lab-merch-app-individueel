@@ -32,8 +32,7 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 7.5rem;
-    padding: 0 1rem;
+    gap: 5.5rem;
     z-index: 200;
 }
 
@@ -41,10 +40,14 @@ header input[type="checkbox"] {
     display: none;
 }
 
+header img {
+    padding-left: 1rem;
+}
+
 .header-layout {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .icon-btn {
@@ -137,13 +140,14 @@ h1, h2, h3 {
     font-family: 'Galada';
 }
 
-h1 {
+.begin {
     background-color: var(--color2);
     color: var(--color1);
     border: 1px solid var(--color2);
     border-radius: 40px;
     text-align: center;
     margin: 1rem;
+    padding: 2rem;
 }
 
 
@@ -173,11 +177,16 @@ h1 {
 
 .product-info {
     /*padding: 1.2rem /*1.2rem 2rem*/
-    padding-left: 1rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
 }
 
 .product-info p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.product-info h5 {
+    font-size: 1.4rem;
 }
 
 h2 {
@@ -217,6 +226,7 @@ h2 {
     overflow-x: auto;
     gap: 0.8rem;
     padding: 1rem;
+    border-radius: 50px;
     /*cursor: grab;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;*/
@@ -227,7 +237,7 @@ h2 {
 }
 
 .slider-products .product-card {
-    width: 160px;
+    width: 150px;
     flex-shrink: 0;
     /*border-radius: 35px;*/
 }
@@ -237,6 +247,12 @@ h2 {
     color: var(--color1);
     align-self: center;
     white-space: nowrap;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: "Galada";
+    font-size: 1.2rem;
+    border: 1px solid var(--color1);
+    border-radius: 30px;
 }
 
 
@@ -245,7 +261,7 @@ h2 {
 
 /* grid / containers */
 
-.border {
+.border-grid {
     padding: 1rem;
     border: 1px solid var(--color2);
     border-radius: 55px;
@@ -257,10 +273,10 @@ h2 {
     gap: 1.5rem;
 }
 
-.border p {
+/*.border-grid p {
     text-align: center;
     margin-top: 2rem;
-}
+}*/
 
 .product-containers > .btn {
     grid-column: span 2;
@@ -269,4 +285,11 @@ h2 {
 
 .product-containers .product-card {
     width: 100%;
+}
+
+.text-wait-for-more {
+    font-family: "Galada";
+    text-align: center;
+    margin: 4rem;
+    font-size: 1.5rem;
 }
