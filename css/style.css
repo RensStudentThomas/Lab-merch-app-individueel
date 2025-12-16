@@ -117,9 +117,8 @@ header input[type="checkbox"] {
     text-decoration: none;
 }
 
-.nav-layout {
-    
-}
+
+/*body*/
 
 main {
     margin: 1rem;
@@ -145,35 +144,46 @@ h1, h2, h3 {
 .slider-products {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     gap: 0.8rem;
     padding: 1rem;
-    background-color: var(--color1);
-    cursor: grab;
-    -webkit-overflow-scrolling: touch;
+    /*cursor: grab;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;*/
 }
 
 .slider-products:active {
     cursor: grabbing;
 }
 
-.slider-products div {
+.product-card {
+    min-width: 220px;
     background-color: var(--color3);
     color: var(--color1);
     border: 1px solid var(--color2);
     border-radius: 40px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
 }
 
-.slider-products div .img-container {
+.slider-products .product-card {
+    min-width: 170px;
+    border-radius: 35px;
+}
+
+.slider-products .product-card .img-container {
     width: 100%;
     border: 1px solid var(--color2);
     border-radius: 40px;
+    display: block;
 }
 
-.slider-products div div {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 1rem;
+.slider-products .img-container {
+    border-radius: 35px;
+}
+
+.product-info {
+    padding: 1rem;
 }
 
 h2 {
@@ -181,7 +191,6 @@ h2 {
     margin-bottom: 1rem;
     margin-left: 2rem;
 }
-
 
 .btn {
     background: var(--color4);
@@ -207,7 +216,18 @@ h2 {
     height: 20px;
 }
 
+.see-more-btn {
+    background: var(--color4);
+    color: var(--color1);
+    align-self: center;
+    white-space: nowrap;
+}
 
+
+
+.product-containers .product-card {
+    width: 100%;
+}
 
 /*kleding*/
 
@@ -218,29 +238,31 @@ h2 {
 }
 
 .product-containers {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.product-containers div {
-    background-color: var(--color3);
-    color: var(--color1);
-    border: 1px solid var(--color2);
-    border-radius: 55px;
-}
-
-.product-containers div .img-container {
+.product-card .img-container {
     width: 100%;
     border: 1px solid var(--color2);
-    border-radius: 55px;
+    border-radius: 40px;
 }
 
-.product-containers div div {
-    padding: 1.2rem;
-    padding-bottom: 2rem;
+.product-info {
+    padding: 1.2rem 1.2rem 2rem;
 }
 
-.product-containers div div p {
+.product-info p {
     font-size: 1.2rem;
+}
+
+.border p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.product-containers > .btn {
+    grid-column: span 2;
+    justify-self: center;
 }
